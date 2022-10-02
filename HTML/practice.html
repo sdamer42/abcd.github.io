@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/bootstrap/dist/css/bootstrap.css"></script>
+    <script src="../node_modules/bootstrap-icons/font/bootstrap-icons.css"></script>
+</head>
+<body onload="bodyLoad()">
+    
+    <script>
+        function alertClick(){
+            alert("This is alert");
+        }
+        function confirmClick(){
+            var flag = confirm("this is confirm");
+            if(flag==true){
+                alert("ok");
+            } else {
+                alert("Cancle");
+            }
+        }
+        function promTp(){
+            var v = prompt("who ar You");
+            if(v==""){
+                alert("Please Provide a Name");
+            } else if (v==null){
+                alert("You Cancled");
+            } else{
+                alert("welcom to office " + v);
+            }
+        }
+
+        var images = ["/Images/AC Room.jpg","/Images/bg-img.jpg","/Images/11.PNG","/Images/11.PNG"];
+        function bodyLoad(){
+        for (var p of images){
+            var img = document.createElement("img");
+            img.width="200";
+            img.height="200";
+            img.border="5";
+            img.src=p;
+            document.querySelector("marquee").appendChild(img);
+        }
+    }
+        
+
+    </script>
+    <button onclick="alertClick()">alert</button>
+    <button onclick="confirmClick()">comfirm</button>
+
+    <button onclick="promTp()">prompt</button>
+
+    <div class="container" scrollamount="20" onmouseover="this.stop()" onmouseout="thisstart()"></div>
+    <marquee></marquee>
+
+    <div class="nav d-flex justify-content-center">
+        <div>
+            <h2>Shopping</h2>
+        </div>
+        <div class="nav-bar">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Bolg</a></li>
+            <li><a href="#">content</a></li>
+            <li><a href="#" class="bi bi-search"></a></li>
+            <li><a href="#" class="bi bi-cart"></a></li>
+
+        </div>
+    </div>
+
+</body>
+</html>

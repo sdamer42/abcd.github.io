@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro</title>
+  </head>
+  <body>
+    <form action="">
+      <dl>
+        <dt>Name</dt>
+        <dd><input type="text" id="txtName"></dd>
+        <dt>Mobile</dt>
+        <dd><input type="text" id="txtMobile"></dd>
+      </dl>
+    </form>
+    <button onclick="OrderClick()" data-bs-target="#billsummary"
+    data-bs-toggle="modal"
+    class="btn btn-danger w-100">Submit Order</button>
+
+    <div class="modal fade" id="billsummary">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Bill Summary</h2>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <dl class="row">
+              <dt class="col-4">Customer Name</dt>
+              <dd class="col-8" id="lblName"></dd>
+              <dt class="col-4">Mobile</dt>
+              <dd class="col-8" id="lblMobile"></dd>
+              <dt class="col-4">Meal Name</dt>
+              <dd class="col-8" id="lblMeal"></dd>
+              <dt class="col-4">Adon Name</dt>
+              <dd class="col-8" id="lblAdon"></dd>
+              <dt class="col-4">Total Amount</dt>
+              <dd class="col-8" id="lblTotal"></dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button data-bs-dismiss="modal" class="btn btn-primary">
+              Ok
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+
+    <script src="/JavaScript/Form-Pro.js"></script>
+  </body>
+</html>

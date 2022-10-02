@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Shadow </title>
+        <style>
+            .container {
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 200px;
+            }
+
+            .container h3{
+                background-color: aqua;
+                text-align: center;
+                width: 100%;
+                padding: 8px 0;
+                
+            }
+
+            img {
+                transform: scale3d(1,1,1);
+                transition: 2s;
+            }
+            img:hover {
+                transform: scale3d(2,2,4);
+                transition-duration: 3s;
+                box-shadow: 4px 4px 4px black;
+                transform: rotate(45deg);
+                width: 300px;
+                height: 300px;
+            }
+            .figure{
+                width: 300px;
+                height: 200px;
+                border:1px solid black;
+                background-image: url("../public/images/jacket.jpg");
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+            <div class="figure">
+                <img src="/Images/car-2.jpg" width="300" height="200">
+                <h3>Mercedese-Benz</h3>
+            </div>
+            <div class="figure">
+                <img src="/Images/car-3.jpg" width="300" height="200">
+                <h3>Land Rover</h3>
+            </div>
+       </div>
+    </body>
+</html>

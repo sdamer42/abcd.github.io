@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Shadow </title>
+        <style>
+            .container {
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img {
+                transform: scale3d(1,1,1);
+                transition: 3s;
+            }
+            img:hover {
+                transform: scale3d(2,2,3);
+                transition: 3s;
+                /* box-shadow: 4px 4px 4px black; */
+               
+            }
+            .figure{
+                width: 800px;
+                height: 300px;
+                display: flex;
+                gap: 30px;
+                /* border:1px solid black; */
+                /* background-image: url("../public/images/jacket.jpg"); */
+                /* margin: 30px; */
+            }
+        </style>
+        <script>
+            let figure = document.querySelector(".figure");
+
+        </script>
+    </head>
+    <body>
+       <div class="container">
+         
+            <div class="figure">
+                <img src="/Images/cola-can.jpg" width="300" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda quam placeat aliquid mollitia doloremque repellat ducimus quisquam. Iste corporis mollitia, debitis nihil sequi molestias suscipit ipsam vel nostrum soluta?</p>
+            </div>
+
+       </div>
+    </body>
+</html
